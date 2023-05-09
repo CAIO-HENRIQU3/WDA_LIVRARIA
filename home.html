@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <title>WDA Livraria - Home</title>
+</head>
+<body>
+<header>
+    <nav class = "navbar">
+        <a class = "logo"><img src="Logo.png"></a>
+        <ul class = "nav-menu">
+            <li class = "nav-item"><a href="home.html" class = "nav-link"><b>Home</b></a></li>
+            <li class = "nav-item"><a href="usuarios.html" class = "nav-link"><b>Usuarios</b></a></li>
+            <li class = "nav-item"><a href="editoras.html" class = "nav-link"><b>Editoras</b></a></li>
+            <li class = "nav-item"><a href="livros.html" class = "nav-link"><b>Livros</b></a></li>
+            <li class = "nav-item"><a href="alugueis.html" class = "nav-link"><b>Alugueis</b></a></li>
+        </ul>
+            <img src="user-logo.png" class = "user-pic" onclick = "toggleMenu()">
+                <div class = "sub-menu-warp" id = "subMenu">
+                <div class = "sub-menu">
+                <div class = "user-info">
+                    <img src = "user-logo.png" >
+                    <h3>Adiministrador</h3>
+                </div>
+                    <hr>
+                        <a href="index.html" class = sub-menu-link>
+                            <i class="fa-solid fa-arrow-right-from-bracket" style="color: #000000;"></i>
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                </div>
+                </div>
+        <div class = "hamburger">
+            <span class = "bar"> </span>
+            <span class = "bar"> </span>
+            <span class = "bar"> </span>
+        </div>
+    </nav>
+</header>
+    <img src="banner.png" class = "banner">
+<div class = "box-info">
+    <div style = "background-color: whitesmoke;" class = "box-info-single">
+        <div class = "text-info">
+            <h3>Total De Livros</h3>
+            <p id = "totallivros"></p>
+        </div>
+            <i class="fa-solid fa-book" style="color: #000000;"></i>
+        </div>
+    <div style = "background-color: whitesmoke;" class = "box-info-single">
+        <div class = "text-info">
+            <h3>Media de Livros por Usuario</h3>
+            <p id = "livromedia"></p>
+        </div>
+            <i class="fa-regular fa-user" style="color: #000000;"></i>
+        </div>
+    <div style = "background-color: whitesmoke;" class = "box-info-single">
+        <div class = "text-info">
+            <h3>Livros Emprestados</h3>
+            <p id = "livroemprestado"></p>
+        </div>
+            <i class="fa-solid fa-book" style="color: #000000;"></i>
+        </div>
+    </div>
+</div>
+    <div class="box-info">
+        <div style = "background-color: whitesmoke;" class = "box-info-single">
+            <div class = "text-info">
+                <h3>O Livro Mais Alugado</h3>
+            <p id = "livromaisalugado"></p>
+        </div>
+            <i class="fa-solid fa-star" style="color: #000000;"></i>
+        </div>
+    </div>
+<footer>
+    <h3>© WDA - Livraria Você Pode e Vai Muito Além</h3>
+</footer>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
